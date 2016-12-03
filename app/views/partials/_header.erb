@@ -1,0 +1,18 @@
+<div >
+
+  <a href="/">Home</a>
+  <% if current_user %>
+
+  <a href="/users/<%= session[:id] %>">Chat Page</a>
+    <form action='/sessions' method= "POST" class="post-form">
+      <input type="hidden" value ="delete" name="_method">
+      <input class="button" type="submit" value="Log Out">
+    </form>
+
+
+    <% else %>
+      <a href="/users/new">Create chatroom</a>
+      <a href="/sessions/login">Login to chatroom</a>
+    <% end %>
+
+</div>

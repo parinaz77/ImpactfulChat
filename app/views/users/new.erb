@@ -1,0 +1,26 @@
+<% if @errors %>
+  <% @errors.each do |error| %>
+  <p><font color="red"> <%= error %></font></p>
+  <% end %>
+<% end %>
+
+<div class="container">
+  <form action='/users' method='POST'>
+    <label for="room_name">Choose a chatroom name:</label>
+    <input type="text" name="chatroom[room_name]" placeholder="Room Name">
+    <br>
+    <br>
+
+    <label for="key">Your chatroom key(5 digit only):</label>
+    <!-- <input pattern=".{5}" title="5 characters" placeholder="5 characters" name="password" type="text" /> -->
+
+    <input type="text" name="chatroom[key]" value="<%= @key %>"placeholder="Key">
+    <p class = "colorp">Save your key for future login!</p>
+
+    <!-- <button class = "button" type="submit">Create!</button> -->
+    <input class = "button" type="submit" name="Create" value = "Create">
+    <br>
+    <br>
+  </form>
+</div>
+  <a href="/">Back</a>

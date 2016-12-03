@@ -1,0 +1,16 @@
+<% if @error%>
+    <p><font color="red"> <%= @error %></font></p>
+<% end %>
+
+<div class="container">
+<form action='/sessions' method= 'POST'>
+  <label for="room_name">Chatroom name:</label>
+  <input type="room_name" name="room_name" placeholder="Chatroom Name">
+  <br>
+  <br>
+  <label for="key">Your Key:</label>
+  <input type="text" name="key" placeholder="5 digit">
+
+  <input class = "button" type="submit" name="Login">
+</form>
+</div>
