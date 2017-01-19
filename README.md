@@ -12,3 +12,8 @@ When users create a chatroom they are given a 5 digit code. They only need the c
 
 ![pic1](/public/images/chat.png)
 
+## Technologies Used
+* Sinatra
+* Active Record
+* PostgreSQL
+
