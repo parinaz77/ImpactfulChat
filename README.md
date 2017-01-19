@@ -16,4 +16,5 @@ When users create a chatroom they are given a 5 digit code. They only need the c
 * Sinatra
 * Active Record
 * PostgreSQL
+* Google map API
 
