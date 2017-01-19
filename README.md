@@ -18,3 +18,17 @@ When users create a chatroom they are given a 5 digit code. They only need the c
 * PostgreSQL
 * Google map API
 
+### To run locally
+To run the app locally download the files and follow the steps bellow in your terminal:
+```
+bundle install
+```
+```
+be rake db:create
+```
+```
+be rake db:migrate
+```
+```
+be shotgun
+```
